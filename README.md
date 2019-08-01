@@ -10,7 +10,7 @@ Process any type of data in your projects easily, control the flow of your data!
 ### Installation
 Install `smart-pipeline` with:
 ``` bash
-pip install -U smart-pipeline
+pip install --upgrade smart-pipeline
 ```
 
 ### Usage
