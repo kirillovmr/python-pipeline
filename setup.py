@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="smart_pipeline",
-    version="0.0.2",
+    version="1.0.0",
     author="Viktor Kirillov",
     author_email="kirillovmr@gmail.com",
     description="Data Pipeline for your Python projects",
