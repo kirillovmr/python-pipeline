@@ -13,9 +13,24 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/kirillovmr/python-pipeline",
     packages=setuptools.find_packages(),
+    install_requires=[
+        'tqdm>=4.31.1',
+    ],
     classifiers=[
+        # How mature is this project? Common values are
+        'Development Status :: 5 - Production/Stable',
+
+        # Indicate who your project is intended for
+        'Intended Audience :: Information Technology',
+
+        # Pick your license as you wish (should match "license" above)
+        'License :: OSI Approved :: Apache Software License',
+
+        # Specify the Python versions you support here. In particular, ensure
+        # that you indicate whether you support Python 2, Python 3 or both.
         "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MIT License",
+
+        # Operating system
         "Operating System :: OS Independent",
     ],
 )
