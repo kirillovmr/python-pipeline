@@ -15,17 +15,18 @@ pip install -U smart-pipeline
 
 ### Usage
 Package 'smart_pipeline' provides a Pipeline class:
-''' python
+``` python
 # Import Pipeline class
 from smart_pipeline import Pipeline
 
 # Create an instance
 pl = Pipeline()
-'''
+```
 
 Pipeline class has 3 types of pipes: item, data and stat.
+
 **Item pipe** modifies each item in dataset without changing the whole population of data:
-''' python
+```python
 data = [1,2,3,4,5]
 
 # Define an item function
@@ -38,10 +39,10 @@ pl.addItemPipe(addOne)
 res = pl(data)
 
 # res = [2,3,4,5,6]
-'''
+```
 
 **Data pipe** is a filter:
-''' python
+``` python
 data = [1,2,3,4,5]
 
 def onlyOdd(item):
@@ -51,10 +52,10 @@ pl.addDataPipe(onlyOdd)
 res = pl(data)
 
 # res = [1,3,5]
-'''
+```
 
 **Stat pipe** reduces over the data, passing the accumulated value to each element:
-''' python
+``` python
 data = [1,2,3,4,5]
 
 # Function that goes over all items in dataset
@@ -80,11 +81,12 @@ pl(data)
 # 5 items were processed in total.
 # 2 of them are even.
 # 3 of them are odd
-'''
+```
 
 ---
 ### [Check out some examples](https://github.com/kirillovmr/python-pipeline/tree/master/examples)
 ---
 
 If this library solved some of your problems, please consider starring the project 😉
+
 And feel free to create pull requests!
